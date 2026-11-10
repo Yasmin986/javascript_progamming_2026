@@ -33,6 +33,7 @@ console.log(typeof null)
 
 /**
  Basic Operators﻿
+
 If your country split in half, and each half would contain half the population, then how many people would live in each half?
 
 Increase the population of your country by 1 and log the result to the console.
@@ -43,3 +44,25 @@ The average population of a country is 33 million people. Does you country have 
 
 Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
  */
+let continent = "Asia";
+let country = "India";
+let language = "Hindi"
+let population = 150;
+console.log(population / 2);
+
+population++;
+console.log(population)
+
+let FinlandPopulation = 6;
+console.log(population > FinlandPopulation);
+
+let avgPopulation = 33;
+console.log(population < avgPopulation);
+
+let description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description)
+
+/** Statements﻿
+If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
+
+After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.*/
