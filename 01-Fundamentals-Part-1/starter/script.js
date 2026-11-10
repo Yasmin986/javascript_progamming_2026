@@ -47,7 +47,7 @@ Based on the variables you created, create a new variable description which cont
 let continent = "Asia";
 let country = "India";
 let language = "Hindi"
-let population = 150;
+let population = 15;
 console.log(population / 2);
 
 population++;
@@ -66,3 +66,17 @@ console.log(description)
 If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
 
 After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.*/
+
+if (population > avgPopulation) {
+    let diff = population - avgPopulation
+    console.log(`${country}'s population is ${diff} million above average`)
+} else {
+    diff = avgPopulation - population
+    console.log(`${country}'s population is ${diff} million below average`)
+}
+
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
