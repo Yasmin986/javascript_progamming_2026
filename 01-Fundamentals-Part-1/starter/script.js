@@ -46,8 +46,8 @@ Based on the variables you created, create a new variable description which cont
  */
 let continent = "Asia";
 let country = "India";
-let language = "Hindi"
-let population = 15;
+let language = "mandarin"
+let population = 130;
 console.log(population / 2);
 
 population++;
@@ -80,3 +80,48 @@ console.log('19' - '13' + '17'); // -> 617
 console.log('19' - '13' + 17); // -> 23
 console.log('123' < 57); // -> false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
+// 5 falsy values are : 0 , '', undefined , null, NaN
+
+// Equality Operators: == vs. ===
+
+// const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+
+// if (numNeighbours === 1) {
+//     console.log("Only 1 border!");
+// } else if (numNeighbours > 1) {
+//     console.log("More than 1 border");
+// } else {
+//     console.log("No Borders")
+// }
+
+const isIsland = false
+
+if (!isIsland && population < 50 && language === "English") {
+    console.log("Sarah wants to live here!");
+} else {
+    console.log("Sarah does not like this country!")
+}
+
+switch (language) {
+    case "chinese":
+    case "mandarin":
+        console.log('MOST number of native speakers!');
+        break;
+    case "spanish":
+        console.log('2nd place in number of native speakers');
+        break;
+    case "english":
+        console.log('3rd place');
+        break;
+    case "hindi":
+        console.log('Number 4');
+        break;
+    case "arabic":
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+}
+
+const ternery = (population > 33) ? console.log("India's population is above average") : console.log("India's population is below average");
